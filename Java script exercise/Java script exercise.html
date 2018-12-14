@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="sqrNum"></p>
+<p id="addNum"></p>
+<p id="multiNum"></p>
+<p id="subtractNum"></p>
+<p id="divideNum"></p>
+
+<button onclick="alertFunction()">Click to Alert</button>
+
+<p id="cubion"></p>
+
+<p id="personObject"></p>
+<p id="courseFunction"></p>
+
+
+<script>
+
+var sqrNum = function (a) {
+	return (a*a);
+}
+document.getElementById('sqrNum').innerHTML = sqrNum(44);
+//------------
+
+//-------------
+var num1 = 8;
+var num2 = 2;
+
+//-------------
+var addNum = function (a,b) {
+	return (a+b);
+}
+document.getElementById("addNum").innerHTML = addNum(num1,num2);
+//-----------
+
+var multiNum = function (a,b) {
+	return (a*b);
+}
+document.getElementById("multiNum").innerHTML = multiNum(num1,num2);
+//---------
+
+var subtractNum = function (a,b) {
+	return (a-b);
+}
+document.getElementById("subtractNum").innerHTML = subtractNum(num1,num2);
+//---------
+
+var divideNum = function (a,b) {
+	return (a/b);
+}
+document.getElementById("divideNum").innerHTML = divideNum(num1,num2);
+//---------
+
+function alertFunction () {
+	alert("Hello World");
+}
+//----------
+
+var height = 4;
+var length = 3;
+var width = 7;
+
+var cubion = function (a,b,c) {
+	return (a*b*c);
+}
+document.getElementById('cubion').innerHTML = cubion(height,length,width);
+//---------
+
+var person = {
+	firstName: "Kamal",
+	lastName: "Raj",
+	age: 15,
+	city: "Kandy"
+};
+document.getElementById('personObject').innerHTML = "My Name is " + person.firstName + " " + person.lastName + ". " + "I am " + person.age + "Years old. " + "I live in " + person.city + ".";
+//--------
+
+var course = {
+	courseName: "BIT",
+	courseFee: "Rs 150 000",
+	startDate: "12.06.2018",
+	center: "Our Office",
+};
+
+document.getElementById('courseFunction').innerHTML = "Course Name: " + course.courseName + "<br>" + "Course Fee: " + course.courseFee + "<br>" + "Start Date: " + course.startDate + "<br>" + "center: " + course.center;
+
+</script>
+
+</body>
+</html>
